@@ -1,0 +1,268 @@
+@font-face {
+  font-family: 'jersey';
+  src: url(./fonts/Jersey_10/Jersey10-Regular.ttf);
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+  --rtc-primary-color: #26c2e9d7;
+  --rtc-secondary-color: #ffff00;
+  --rtc-teritiary-color: #ea4141ea;
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(41, 215, 225, 1) 25%,
+    rgba(58, 155, 225, 1) 73%
+  );
+}
+.header-container {
+  display: flex;
+  padding: 30px;
+  align-items: center;
+  height: 30px;
+  background: url('https://img.freepik.com/vector-gratis/emoticonos-fondo-espacio-vacio_79603-1023.jpg');
+  position: fixed;
+  width: 100%;
+}
+.header-container > nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+.header-container a > h2 {
+  font-family: 'jersey';
+  font-size: 35px;
+}
+.nav-list {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+a {
+  color: #000000;
+  font-weight: 600;
+}
+.barra {
+  display: none;
+  margin-right: 10px;
+  font-size: 23px;
+}
+.header-container a > h2:hover {
+  color: #ffffff;
+}
+.nav-list a:hover {
+  color: #ffffff;
+}
+@media (max-width: 500px) {
+  .nav-list {
+    display: none;
+  }
+  .barra {
+    display: block;
+  }
+}
+/*hero*/
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+/*izquiera*/
+#info {
+  width: 40%;
+  min-width: 516px;
+}
+.info > h1 {
+  font-size: 40px;
+  font-family: 'jersey';
+}
+.info > h1 > span {
+  font-size: 40px;
+  font-family: 'jersey';
+  color: var(--rtc-secondary-color);
+}
+.button {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+button {
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+}
+button:hover {
+  color: #008000;
+}
+.info > p {
+  margin-top: 10px;
+}
+/*derecha*/
+#hero > img {
+  width: 30%;
+  max-width: 500px;
+  min-width: 300px;
+}
+@media (max-width: 570px) {
+  .info {
+    font-size: 30px;
+  }
+  .info {
+    width: 100%;
+    min-width: 0px;
+  }
+}
+.entrada {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.entrada > h1 {
+  font-family: 'jersey';
+  font-size: 40px;
+  text-align: center;
+}
+.emojis {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/*primer emoji*/
+.primer-emoji {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 5px 10px;
+  background-color: rgba(239, 239, 233, 0.8);
+  width: 30%;
+  height: 40%;
+  border-radius: 7px;
+  width: 30%;
+  max-width: 500px;
+  min-width: 300px;
+}
+.primer-emoji > img {
+  width: 200px;
+}
+.primer-emoji > p {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/*segundo emoji*/
+
+.segundo-emoji {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 5px 10px;
+  background-color: rgba(239, 239, 233, 0.8);
+  width: 30%;
+  height: 40%;
+  border-radius: 7px;
+  width: 30%;
+  max-width: 500px;
+  min-width: 300px;
+}
+.segundo-emoji > img {
+  width: 200px;
+}
+.segundo-emoji > p {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/*tercer-emoji*/
+.tercer-emoji {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 5px 10px;
+  background-color: rgba(239, 239, 233, 0.8);
+  width: 30%;
+  height: 40%;
+  border-radius: 7px;
+  max-width: 500px;
+  min-width: 300px;
+}
+.tercer-emoji > img {
+  width: 200px;
+}
+.tercer-emoji > p {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media (max-width: 570px) {
+  .entrada {
+    font-size: 20px;
+  }
+  .entrada {
+    width: auto;
+    min-width: 0px;
+  }
+}
+@media (max-width: 570px) {
+  #todos_los_emojis {
+    font-size: 20px;
+  }
+  #todos_los_emojis {
+    width: auto;
+    min-width: 0px;
+  }
+}
+footer {
+  margin-top: 50px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  padding: 50px;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+
+  background: url('https://st2.depositphotos.com/1482677/10467/v/450/depositphotos_104672196-stock-illustration-hand-drawn-happy-and-sad.jpg');
+}
+
+footer > ul {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #b5c83d;
+}
+
+footer > ul > li {
+  margin: 5px;
+}
+footer > ul > li:first-child {
+  font-weight: bolder;
+}
+footer::before {
+  filter: blur(30px);
+}
